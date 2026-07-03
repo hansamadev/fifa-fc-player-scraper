@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Scraper Outputs (ignore all data/logs, but keep the directory)
+output/*
+!output/.gitkeep

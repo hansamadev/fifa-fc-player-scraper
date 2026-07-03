@@ -1,0 +1,32 @@
+# FIFAIndex Scraper Configuration
+
+base_url: "https://www.fifaindex.com"
+
+# Only FC 26 (Male only)
+players_list_path: "/players/?gender=0"
+
+# Concurrency: number of simultaneous browser pages
+concurrency: 15
+
+# Delay between page loads per worker (milliseconds)
+page_delay_ms: 300
+
+# Retry settings
+retry_attempts: 4
+retry_wait_seconds: 8
+
+# Output
+output_dir: "./output"
+output_jsonl: "players.jsonl"
+output_csv: "players.csv"
+
+# Browser
+headless: true
+browser_timeout_ms: 30000
+
+# Set to an integer to limit how many list pages to crawl (null = all)
+max_pages: null
+
+# Resume: skip player IDs already present in checkpoint file
+resume: true
+checkpoint_file: "./output/scraped_ids.txt"
